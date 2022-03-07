@@ -1,0 +1,52 @@
+= README_DEV
+General tips/ideas/... on how to organise the code.
+
+== General setup
+Each "dashboard" has a `<script context="module">` at the top to load the data. This dashboard also contains e.g. drop down boxes to change properties of the plots (e.g. which axes to draw on a scatterplot).
+
+== Passing arguments
+There are different ways to pass arguments, e.g. which axes to draw in a scatterplot. These can be passed as strings (i.e. the name of the field) or as a function.
+
+=== As a string
+In `scatter.svelte`:
+
+[source,html]
+----
+<Scatterplot datapoints={datapoints}
+            x="age"
+            y="weight"
+/>
+----
+
+In `Scatterplot.svelte`:
+
+[source,html]
+----
+<svg width="600" height="600">
+    {#each Object.values(datapoints) as datapoint}
+        <circle cx={datapoint[x]} cy={datapoint[y]} r=5 />
+    {/each}
+</svg>
+----
+
+=== As a function
+In `scatter.svelte`:
+
+[source,html]
+----
+<Scatterplot datapoints={datapoints}
+            x={(d) => d.age}
+            y={(d) => d.weight}
+/>
+----
+
+In `Scatterplot.svelte`:
+
+[source,html]
+----
+<svg width="600" height="600">
+    {#each Object.values(datapoints) as datapoint}
+        <circle cx={x(datapoint)} cy={y(datapoint)} r=5 />
+    {/each}
+</svg>
+----
