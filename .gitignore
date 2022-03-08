@@ -1,3 +1,4 @@
 node_modules
 .vercel
 data/credentials.json
+data/.ipynb_checkpoints
