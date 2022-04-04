@@ -7,7 +7,7 @@
 	// See https://github.com/vasturiano/force-graph
 
     let divWidth;
-    let divHeight;
+    let divHeight = 500;
     // $: console.log(divWidth)
 
     let my_id;
@@ -93,17 +93,17 @@
         Graph = ForceGraph()(graphDiv)
                     .graphData({ nodes, links })
                     .width(divWidth)
-                    .height(500)
+                    .height(divHeight)
                     .backgroundColor('#101020')
                     // .backgroundColor("whitesmoke")
                     .nodeLabel('id')
                     .d3AlphaDecay(0)
-                    .d3VelocityDecay(0.3)
+                    .d3VelocityDecay(0.2)
                     .cooldownTime(10000)
                     // .linkColor(() => 'rgba(0,0,0,0.05)')
                     .linkColor(() => 'rgba(255,255,255,0.6)')
-                    .onNodeHover(selectDatapoints)
-                    // .enablePointerInteraction(true)
+                    // .onNodeHover(selectDatapoints)
+                    .enablePointerInteraction(false)
     })
 
     $: { if ( Graph ) {

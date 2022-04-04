@@ -20,6 +20,8 @@
     export let edges
     export let feature_datapoints
 
+    // $: console.log(edges)
+
     import { selected_datapoints, selected_feature_datapoints } from './store'
     import { extent } from 'd3';
     import { scaleLinear, scaleOrdinal } from 'd3-scale';
@@ -124,6 +126,8 @@ Select individual:
             bind:selected={$selected_datapoints}
             nodecolor_function={(node) => { if ( $selected_datapoints[node.id] ) { return "red" } else { return colorScale(node) }}}/>
         </Col>
+    </Row>
+    <Row>
         <Col>
             {#if ( Object.keys($selected_datapoints).length > 0 )}
             <FeatureList bind:datapoints={feature_datapoints}

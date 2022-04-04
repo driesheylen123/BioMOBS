@@ -91,12 +91,12 @@
                     .backgroundColor("whitesmoke")
                     .nodeLabel('id')
                     .d3AlphaDecay(0)
-                    .d3VelocityDecay(0.3)
-                    .cooldownTime(10000)
+                    .d3VelocityDecay(0.08)
+                    .cooldownTime(60000)
                     .linkColor(() => 'rgba(0,0,0,0.05)')
                     // .linkColor(() => 'rgba(255,255,255,0.2)')
                     .onNodeHover(selectDatapoints)
-                    // .enablePointerInteraction(true)
+                    .enablePointerInteraction(false)
     })
 
     $: { if ( Graph ) {
