@@ -62,7 +62,7 @@
 
     const default_nodesize_function = 10
     const default_nodecolor_function = ( node ) => {
-        if ( selected[node.id] ) {return "rgba(255,0,0,0.8)"} else {return "rgba(70,130,180,0.5)"} }
+        if ( selected[node.id] ) {return "rgba(154, 205, 50)"} else {return "rgba(70,130,180,0.1)"} }
 
     export let nodesize_function = default_nodesize_function
     export let nodecolor_function = default_nodecolor_function

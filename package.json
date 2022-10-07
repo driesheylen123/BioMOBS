@@ -21,6 +21,7 @@
     "d3-scale": "^4.0.2",
     "d3-scale-chromatic": "^3.0.0",
     "force-graph": "^1.42.4",
-    "sveltestrap": "^5.7.0"
+    "sveltestrap": "^5.7.0",
+    "url": "^0.11.0"
   }
 }

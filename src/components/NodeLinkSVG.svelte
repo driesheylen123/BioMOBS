@@ -68,7 +68,7 @@
 
 <style>
 	circle {
-		fill: steelblue;
+		fill: rgb(70, 180, 90);
         visibility:visible; 
 	}
     circle:hover {

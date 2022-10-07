@@ -13,11 +13,11 @@
 
 <style>
     circle {
-        fill: steelblue;
-        fill-opacity: 0.8;
+        fill: greenyellow;
+        fill-opacity: 0.4;
     }
     circle.navi {
-        fill: red;
+        fill: rgb(154, 205, 50);
     }
     #ontop {
         z-index: 10;
@@ -32,7 +32,7 @@
 <Card body>
 <div id="ontop">
     <svg width="600" height="600">
-        <circle class="navi" cx=300 cy=300 r=100 />
+        <circle class="navi" cx=300 cy=300 r=200 />
     </svg>
 </div>
 <svg width="600" height="600">

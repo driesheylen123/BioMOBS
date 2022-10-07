@@ -1,6 +1,6 @@
 <script context="module">
     export async function load({fetch}) {
-        const res1 = await fetch('/api/datapoints.json')
+        const res1 = await fetch('/api/OBSOLETE_datapoints.json')
         if ( res1.ok ) {
             return {
                 props: {
@@ -17,7 +17,11 @@
     let features = Object.keys(Object.values(datapoints)[0])
     let selectedFeatureX = features[0]
     let selectedFeatureY = features[1]
+
+    $console.log(datapoints);
+
 </script>
+
 
 X axis:
 <Input type="select" name="selectFeatureX" id="selectFeatureX" bind:value={selectedFeatureX}>

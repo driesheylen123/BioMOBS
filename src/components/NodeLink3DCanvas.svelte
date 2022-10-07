@@ -72,7 +72,7 @@
     export let nodesize_function = default_nodesize_function
     export let nodecolor_function = default_nodecolor_function
 
-    export let selectDatapoints = ( node ) => {
+    export const selectDatapoints = ( node ) => {
         selected = {}
         if ( node ) { selected[node.id] = true }
     }

@@ -3,7 +3,7 @@ import { aql } from "arangojs"
 let data = {}
 
 export async function get() {
-    const query_datapoints = aql`FOR c IN stad_murih RETURN c`;
+    const query_datapoints = aql`FOR c IN T2D_STAD RETURN c`;
     const cursor_datapoints = await db.query(query_datapoints, { batchSize: 10 });
     for await (const batch of cursor_datapoints.batches) {
         // Process all values in a batch in parallel

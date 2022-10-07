@@ -7,4 +7,4 @@
 </svelte:head>
 
 <h1>Views</h1>
-<a href="stad">STAD</a>
+<a href="stad">To show STAD graph loaded click here</a>
