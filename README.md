@@ -24,8 +24,8 @@ VITE_USER=your_user
 VITE_PASSWORD=your_password
 ```
 
-- The actual access through the data is defined in endpoints, defined in `routes/api`. Typically, there are different endpoints for different datasets or types of data. For example, pointing to different tables in the database if this makes sense. These endpoints basically contain the AQL query to get the data from the database. TIP: while developing, check the contents of these endpoints by going to e.g. http://localhost:3000/api/datapoints.json.
-- Any reshaping of the data (e.g. adding a `source` and `target` to edges if only `_from` and `_to` were defined) is done in the endpoints.
+- The actual access through the data is defined in endpoints, defined in `routes/api` (OBSOLETE files). Typically, there are different endpoints for different datasets or types of data. For example, pointing to different tables in the database if this makes sense. These endpoints basically contain the AQL query to get the data from the database. TIP: while developing, check the contents of these endpoints by going to e.g. http://localhost:3000/api/datapoints.json.
+- Any reshaping of the data (e.g. adding a `source` and `target` to edges if only `_from` and `_to` were defined) is done in the endpoints. The format in which the data must be stored in the ArangoDB database is demonstrated in 'data/stad.ipynb'
 
 ## Inspiration:
 - https://gitlab.com/JelmerBot
