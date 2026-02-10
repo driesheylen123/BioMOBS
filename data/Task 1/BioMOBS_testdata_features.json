@@ -1,0 +1,62 @@
+[
+  {
+    "_key": "Apolipoprotein.B"
+  },
+  {
+    "_key": "Aspartate.aminotransferase"
+  },
+  {
+    "_key": "Direct.bilirubin"
+  },
+  {
+    "_key": "Urea"
+  },
+  {
+    "_key": "Calcium"
+  },
+  {
+    "_key": "Cholesterol"
+  },
+  {
+    "_key": "Creatinine"
+  },
+  {
+    "_key": "C.reactive.protein"
+  },
+  {
+    "_key": "Cystatin.C"
+  },
+  {
+    "_key": "Gamma.glutamyltransferase"
+  },
+  {
+    "_key": "Glucose"
+  },
+  {
+    "_key": "Glycated.haemoglobin..HbA1c."
+  },
+  {
+    "_key": "HDL.cholesterol"
+  },
+  {
+    "_key": "IGF.1"
+  },
+  {
+    "_key": "LDL.direct"
+  },
+  {
+    "_key": "Lipoprotein.A"
+  },
+  {
+    "_key": "Oestradiol"
+  },
+  {
+    "_key": "Phosphate"
+  },
+  {
+    "_key": "Rheumatoid.factor"
+  },
+  {
+    "_key": "SHBG"
+  }
+]
